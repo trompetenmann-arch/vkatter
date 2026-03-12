@@ -143,17 +143,6 @@ h1 {
   gap: 1rem;
 }
 
-.project-link {
-  text-decoration: none;
-  color: var(--text);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.project-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
-}
-
 .detail-card {
   margin-bottom: 1rem;
 }
@@ -180,7 +169,8 @@ h1 {
 @media (max-width: 900px) {
   .hero-grid,
   .card-grid,
-  .team-grid {
+  .team-grid,
+  .project-layout {
     grid-template-columns: 1fr;
   }
 
@@ -188,4 +178,39 @@ h1 {
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+}
+
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.project-sidebar {
+  position: sticky;
+  top: 5.5rem;
+}
+
+.compact-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.compact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.compact-list a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.compact-list a:hover {
+  text-decoration: underline;
+}
+
+.project-content h1 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
