@@ -255,6 +255,12 @@ h1 {
   padding-left: 1rem;
 }
 
+.sidebar-heading {
+  margin: 1rem 0 0.35rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
 .compact-list li {
   margin-bottom: 0.5rem;
 }
