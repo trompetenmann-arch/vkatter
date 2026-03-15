@@ -193,6 +193,17 @@ h1 {
   margin-bottom: 1rem;
 }
 
+
+.kivima-logo {
+  width: min(100%, 270px);
+  max-height: 135px;
+}
+
+.project-logo-large.kivima-logo {
+  width: min(100%, 420px);
+  max-height: 195px;
+}
+
 .section-subtitle {
   margin-top: 2rem;
 }
