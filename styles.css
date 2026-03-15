@@ -177,6 +177,20 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.project-logo {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.project-logo-large {
+  max-width: 380px;
+  max-height: 200px;
+}
+
 .section-subtitle {
   margin-top: 2rem;
 }
