@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Valentin Katter | Mathematikdidaktik</title>
+    <link rel="icon" type="image/svg+xml" href="favicon-zeta.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,12 +18,10 @@
       <div class="container nav-wrap">
         <nav>
           <ul class="nav-links">
-            <li><a href="#projekte">Projekte</a></li>
-            <li><a href="#workshops">Workshops</a></li>
-            <li><a href="#lehrveranstaltungen">Lehrveranstaltungen</a></li>
-            <li><a href="#lebenslauf">Lebenslauf</a></li>
-            <li><a href="#publikationen">Publikationen</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#projekte-title">Projekte</a></li>
+            <li><a href="#workshops-title">Workshops</a></li>
+            <li><a href="#ueber-mich-title">Über mich</a></li>
+            <li><a href="#kontakt-title">Kontakt</a></li>
           </ul>
         </nav>
       </div>
@@ -42,7 +41,7 @@
               zu mathematischen Themen der Sekundarstufe I und II sowie zum Einsatz
               von KI im Mathematikunterricht an.
             </p>
-            <a class="btn" href="#projekte">Projekte ansehen</a>
+            <a class="btn" href="#projekte-title">Projekte ansehen</a>
           </div>
           <aside class="hero-card" aria-label="Kurzprofil">
             <img class="portrait" src="images/passbild.svg" alt="Passbild von Dr. Valentin Katter" />
@@ -56,28 +55,28 @@
         </div>
       </section>
 
-            <section id="projekte" class="section alt">
+      <section id="projekte" class="section alt">
         <div class="container">
-          <h2>Projekte</h2>
+          <h2 id="projekte-title">Projekte</h2>
           <h3>Aktuelle Projekte</h3>
           <div class="card-grid">
             <article class="card">
               <img class="project-logo" src="projects/Math_CaTS/CATS_Logo.jpg" alt="Math CaTS Logo" />
-              <h4>Math CaTS</h4>
+              <h4 class="project-title">Math CaTS</h4>
               <p><strong>Laufzeit:</strong> seit 2025 </p>
               <p>Chatbots als Tutor in Schulen (Bielefelder Nachwuchsfonds, Universität Bielefeld).</p>
               <p><a class="btn" href="projects/math-cats.html">Mehr zum Projekt</a></p>
               </article>
             <article class="card">
               <img class="project-logo" src="projects/DiLeMath-Logo.png" alt="DiLeMath Logo" />
-              <h4>DiLeMath</h4>
+              <h4 class="project-title">DiLeMath</h4>
               <p><strong>Laufzeit:</strong> seit 2024</p>
               <p>Digitale Lernplattformen und KI-Tools in der Lehramtsausbildung.</p>
               <p><a class="btn" href="projects/dilemath.html">Mehr zum Projekt</a></p>
             </article>
             <article class="card">
-              <img class="project-logo kivima-logo" src="Kivima_Logo" alt="KIVIMA Logo" />
-              <h4>KIVIMA </h4>
+              <img class="project-logo kivima-logo" src="KIVIMA-Logo_new.png" alt="KIVIMA Logo" />
+              <h4 class="project-title">KIVIMA</h4>
               <p><strong>Laufzeit:</strong> seit 2026</p>
               <p>Qualitätsfonds für Lehre, Universität Bielefeld.</p>
               <p><a class="btn" href="projects/qf-visualisierung.html">Mehr zum Projekt</a></p>
@@ -111,7 +110,7 @@
 
       <section id="workshops" class="section">
         <div class="container">
-          <h2>Workshops</h2>
+          <h2 id="workshops-title">Workshops</h2>
           <p>
             Ausgewählte Workshops und Vorträge aus Fortbildungen, Tagungen und
             internationalen Kontexten.
@@ -157,9 +156,58 @@
         </div>
       </section>
 
-      <section id="lehrveranstaltungen" class="section">
+      <section id="ueber-mich" class="section alt">
         <div class="container">
-          <h2>Lehrveranstaltungen</h2>
+          <h2 id="ueber-mich-title">Über mich</h2>
+          <h3>Lebenslauf (Auszug)</h3>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Akademische Ausbildung</h3>
+              <ul class="list">
+                <li>Promotion Didaktik der Mathematik, Universität Bielefeld (2016–2022)</li>
+                <li>Diplom Mathematik, Universität Bielefeld (2010–2013)</li>
+                <li>Bachelor Lehramt Mathematik/Philosophie, Universität Bielefeld (2006–2010)</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Beruflicher Werdegang</h3>
+              <ul class="list">
+                <li>Seit 04/2023: Postdoc, Universität Bielefeld</li>
+                <li>04/2024–09/2024: Vertretung W2-Professur, Universität Osnabrück</li>
+                <li>06/2022–09/2023: Gastdozent, Hochschule Fresenius Düsseldorf</li>
+                <li>Seit 04/2025: Lehrkraft, Rudolf Steiner Schule Bielefeld</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Internationale Erfahrung</h3>
+              <ul class="list">
+                <li>Forschungskooperationen mit Partnern in Chile, Kap Verde, Italien, Portugal, Brasilien und Argentinien</li>
+                <li>Gastvorträge, Lehrkräftefortbildungen und Austauschprojekte in internationalen Konsortien</li>
+              </ul>
+            </article>
+          </div>
+          <h3 class="section-subtitle">Publikationen</h3>
+          <ul class="list publication-list">
+            <li>Katter, V.; Huget, J. (accepted) Förderung digitaler Kompetenzen durch LLMs - Darstellungswechsel quadratischer Funktionen mit ChatGPT. In: mathematica didactica (peer reviewed)</li>
+            <li>Katter, V. (2025) Didaktisch orientierte Sachanalysen zur Ausdifferenzierung allgemeiner funktionaler Grundvorstellungen – Exemplarisch durchgeführt an der Sinusfunktion – Journal für Mathematik-Didaktik (peer reviewed)</li>
+            <li>Katter, V.; Barton, D. (2025) Wie sich Large Language Models im Mathematikunterricht bewähren – und woran sie (noch) scheitern. Mitteilungen der Gesellschaft für Didaktik der Mathematik 119</li>
+            <li>Katter, V.; Salle, A.; Wolff, A.; Laun, M. (2025) Eine Untersuchung zum Einfluss von ChatGPT auf den Modellierungsprozess von Achtklässler*innen. In: Beiträge zum Mathematikunterricht 2025.</li>
+            <li>Katter, V.; Barton, D. (2025) „Wo liegt mein Fehler?" Einsatz von generativer KI zur Fehlerreflexion. Erste Zwischenergebnisse des Projekts KIBEBA. In: Beiträge zum Mathematikunterricht 2025.</li>
+            <li>Katter, V.; Huget, J. (2024) ChatGPT und quadratische Funktionen: Fachdidaktische Perspektiven und Anwendungen. In: Beiträge zum Mathematikunterricht 2024.</li>
+            <li>Bulthaup, P.; Jetses, T.; Katter, V. (2024) Das digitale Federpendel – virtuell-enaktiv zu periodischen Prozessen. In: Mathematik lehren 243, 31–34</li>
+            <li>Katter, V. (2023) Historische, logische und individuelle Genese der Trigonometrie aus didaktischer Sicht. Springer Nature</li>
+            <li>Katter, V; Salle, A. (2023) Die Oszillationsvorstellung – eine Grundvorstellung für die reelle Sinusfunktion. In: der Mathematikunterricht</li>
+            <li>Katter, V. (2023) Schräger Schnitt und schöne Wellen – Ein Zugang zur Richtungsableitung von Funktionen in zwei Veränderlichen mithilfe von Zylinderschnitten. In: der Mathematikunterricht</li>
+            <li>Katter, V. (2023) Rekonstruktion von Denkprozessen zum Sinusbegriff in kooperativen Problemlöse-situationen. In: Beiträge zum Mathematikunterricht 2022. Band 2</li>
+            <li>Katter, V.; Alarcón Relmucao, N. A. (2021) Construyendo en clases las nociones básicas de la funcion exponencial y funcion seno. In: R. vom Hofe, J. Soto-Andrade, C. L. Vargas Diaz, P. Reyes-Santander, E. Ramos Rodriguez und E. Puraivan Huenuman (Hg.): Matemática enactiva. Aportes para la articulación entre teoría y práctica en la educación matemática: Grao. (peer reviewed)</li>
+            <li>Katter, V. (2020) Vom Dreieck über den Kreis zur Sinusfunktion. In: mathematik lehren 218, S. 23–26</li>
+            <li>Katter, V. (2020) Inhaltliche Kompetenzen von Lehramtsstudierenden im Bereich Trigonometrie. In: Siller, H.-S., Weigel, W. Wörler, J. F. (Hg.): Beiträge zum Mathematikunterricht 2020. Münster: WTM-Verlag</li>
+            <li>Katter, V. (2019) The connection between angle measure and the understanding of sine. In: Proceedings of the Eleventh Congress of the European Society for Research in Mathematics Education</li>
+            <li>Katter, V. (2018) Die Ableitung der Sinusfunktion–prozedurale und konzeptionelle Aspekte trigonometrischer Wissenselemente. In: Beiträge zum Mathematikunterricht 2018. Vorträge zur Mathematikdidaktik und zur Schnittstelle Mathematik/Mathematikdidaktik auf der gemeinsamen Jahrestagung GDM und DMV 2018. Band 2</li>
+            <li>Katter, V. (2017) Ableitung von sin und cos. In: mathematik lehren 204, S. 40–43</li>
+            <li>Katter, V.; Mahrt, N. (2014) Reduced representations of rooted trees. In: Journal of Algebra 413, S. 41–49</li>
+          </ul>
+          <h3 id="lehrveranstaltungen-title" class="section-subtitle">Gehaltene Lehrveranstaltungen</h3>
           <div class="table-wrap">
             <table class="cv-table" aria-label="Übersicht Lehrveranstaltungen">
               <thead>
@@ -192,67 +240,9 @@
         </div>
       </section>
 
-      <section id="lebenslauf" class="section alt">
-        <div class="container">
-          <h2>Lebenslauf (Auszug)</h2>
-          <div class="card-grid">
-            <article class="card">
-              <h3>Akademische Ausbildung</h3>
-              <ul class="list">
-                <li>Promotion Didaktik der Mathematik, Universität Bielefeld (2016–2022)</li>
-                <li>Diplom Mathematik, Universität Bielefeld (2010–2013)</li>
-                <li>Bachelor Lehramt Mathematik/Philosophie, Universität Bielefeld (2006–2010)</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Beruflicher Werdegang</h3>
-              <ul class="list">
-                <li>Seit 04/2023: Postdoc, Universität Bielefeld</li>
-                <li>04/2024–09/2024: Vertretung W2-Professur, Universität Osnabrück</li>
-                <li>06/2022–09/2023: Gastdozent, Hochschule Fresenius Düsseldorf</li>
-                <li>Seit 04/2025: Lehrkraft, Rudolf Steiner Schule Bielefeld</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Internationale Erfahrung</h3>
-              <ul class="list">
-                <li>Forschungskooperationen mit Partnern in Chile, Kap Verde, Italien, Portugal, Brasilien und Argentinien</li>
-                <li>Gastvorträge, Lehrkräftefortbildungen und Austauschprojekte in internationalen Konsortien</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="publikationen" class="section">
-        <div class="container">
-          <h2>Publikationen</h2>
-          <ul class="list publication-list">
-            <li>Katter, V.; Huget, J. (accepted) Förderung digitaler Kompetenzen durch LLMs - Darstellungswechsel quadratischer Funktionen mit ChatGPT. In: mathematica didactica (peer reviewed)</li>
-            <li>Katter, V. (2025) Didaktisch orientierte Sachanalysen zur Ausdifferenzierung allgemeiner funktionaler Grundvorstellungen – Exemplarisch durchgeführt an der Sinusfunktion – Journal für Mathematik-Didaktik (peer reviewed)</li>
-            <li>Katter, V.; Barton, D. (2025) Wie sich Large Language Models im Mathematikunterricht bewähren – und woran sie (noch) scheitern. Mitteilungen der Gesellschaft für Didaktik der Mathematik 119</li>
-            <li>Katter, V.; Salle, A.; Wolff, A.; Laun, M. (2025) Eine Untersuchung zum Einfluss von ChatGPT auf den Modellierungsprozess von Achtklässler*innen. In: Beiträge zum Mathematikunterricht 2025.</li>
-            <li>Katter, V.; Barton, D. (2025) „Wo liegt mein Fehler?" Einsatz von generativer KI zur Fehlerreflexion. Erste Zwischenergebnisse des Projekts KIBEBA. In: Beiträge zum Mathematikunterricht 2025.</li>
-            <li>Katter, V.; Huget, J. (2024) ChatGPT und quadratische Funktionen: Fachdidaktische Perspektiven und Anwendungen. In: Beiträge zum Mathematikunterricht 2024.</li>
-            <li>Bulthaup, P.; Jetses, T.; Katter, V. (2024) Das digitale Federpendel – virtuell-enaktiv zu periodischen Prozessen. In: Mathematik lehren 243, 31–34</li>
-            <li>Katter, V. (2023) Historische, logische und individuelle Genese der Trigonometrie aus didaktischer Sicht. Springer Nature</li>
-            <li>Katter, V; Salle, A. (2023) Die Oszillationsvorstellung – eine Grundvorstellung für die reelle Sinusfunktion. In: der Mathematikunterricht</li>
-            <li>Katter, V. (2023) Schräger Schnitt und schöne Wellen – Ein Zugang zur Richtungsableitung von Funktionen in zwei Veränderlichen mithilfe von Zylinderschnitten. In: der Mathematikunterricht</li>
-            <li>Katter, V. (2023) Rekonstruktion von Denkprozessen zum Sinusbegriff in kooperativen Problemlöse-situationen. In: Beiträge zum Mathematikunterricht 2022. Band 2</li>
-            <li>Katter, V.; Alarcón Relmucao, N. A. (2021) Construyendo en clases las nociones básicas de la funcion exponencial y funcion seno. In: R. vom Hofe, J. Soto-Andrade, C. L. Vargas Diaz, P. Reyes-Santander, E. Ramos Rodriguez und E. Puraivan Huenuman (Hg.): Matemática enactiva. Aportes para la articulación entre teoría y práctica en la educación matemática: Grao. (peer reviewed)</li>
-            <li>Katter, V. (2020) Vom Dreieck über den Kreis zur Sinusfunktion. In: mathematik lehren 218, S. 23–26</li>
-            <li>Katter, V. (2020) Inhaltliche Kompetenzen von Lehramtsstudierenden im Bereich Trigonometrie. In: Siller, H.-S., Weigel, W. Wörler, J. F. (Hg.): Beiträge zum Mathematikunterricht 2020. Münster: WTM-Verlag</li>
-            <li>Katter, V. (2019) The connection between angle measure and the understanding of sine. In: Proceedings of the Eleventh Congress of the European Society for Research in Mathematics Education</li>
-            <li>Katter, V. (2018) Die Ableitung der Sinusfunktion–prozedurale und konzeptionelle Aspekte trigonometrischer Wissenselemente. In: Beiträge zum Mathematikunterricht 2018. Vorträge zur Mathematikdidaktik und zur Schnittstelle Mathematik/Mathematikdidaktik auf der gemeinsamen Jahrestagung GDM und DMV 2018. Band 2</li>
-            <li>Katter, V. (2017) Ableitung von sin und cos. In: mathematik lehren 204, S. 40–43</li>
-            <li>Katter, V.; Mahrt, N. (2014) Reduced representations of rooted trees. In: Journal of Algebra 413, S. 41–49</li>
-          </ul>
-        </div>
-      </section>
-
       <section id="kontakt" class="section">
         <div class="container">
-          <h2>Kontakt</h2>
+          <h2 id="kontakt-title">Kontakt</h2>
           <p>
             Haben Sie Interesse an Kooperationen, Vorträgen oder gemeinsamen
             Forschungsprojekten? Ich freue mich über Ihre Nachricht.
