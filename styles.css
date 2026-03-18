@@ -4,6 +4,7 @@
   --primary: #1d4ed8;
   --card: #ffffff;
   --muted: #4b5563;
+  --header-offset: 4.5rem;
 }
 
 * {
@@ -11,7 +12,7 @@
 }
 
 html {
-  scroll-padding-top: 4.75rem;
+  scroll-padding-top: var(--header-offset);
 }
 
 body {
@@ -130,7 +131,11 @@ h1 {
 
 .section {
   padding: 2rem 0 3rem;
-  scroll-margin-top: 4.75rem;
+}
+
+h2[id],
+h3[id] {
+  scroll-margin-top: var(--header-offset);
 }
 
 .table-wrap {
@@ -245,12 +250,11 @@ h1 {
 
 @media (max-width: 640px) {
   html {
-    scroll-padding-top: 6.75rem;
+    scroll-padding-top: 6.25rem;
   }
 
-  .section {
-    scroll-margin-top: 6.75rem;
-    padding-top: 1.25rem;
+  :root {
+    --header-offset: 6.25rem;
   }
 
   .nav-wrap {
