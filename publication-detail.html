@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publikationsdaten | Dr. Valentin Katter</title>
+    <link rel="icon" type="image/svg+xml" href="favicon-zeta.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="publications.html">← Zurück zu Publikationen</a></li>
+            <li><a href="index.html">Startseite</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section alt">
+        <div class="container">
+          <h1>Publikationsdaten</h1>
+          <table class="publication-detail-table" aria-label="Publikationsdaten"></table>
+          <section class="publication-abstract">
+            <h2>Zusammenfassung</h2>
+            <p id="publication-abstract-text"></p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Dr. Valentin Katter</small>
+      </div>
+    </footer>
+
+    <script src="publications-data.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const params = new URLSearchParams(window.location.search);
+      const publicationId = params.get("id");
+      const pub = (window.PUBLICATIONS || []).find((p) => p.id === publicationId);
+
+      const table = document.querySelector(".publication-detail-table");
+      const abstractText = document.getElementById("publication-abstract-text");
+
+      if (!pub) {
+        table.innerHTML = "<tr><td>Publikation wurde nicht gefunden.</td></tr>";
+        abstractText.textContent = "Bitte gehen Sie zurück zur Übersicht und wählen Sie einen gültigen Eintrag.";
+      } else {
+        const rows = [
+          ["Von", pub.authors],
+          ["Titel", pub.title],
+          ["Sprache", pub.language],
+          ["Erschienen in", pub.venue],
+          ["Publikationstyp", pub.type],
+          ["Publikationsstatus", pub.status],
+          ["DOI/Link", pub.doi ? `<a href='${pub.doi}' target='_blank' rel='noopener noreferrer'>${pub.doi}</a>` : "Kein DOI hinterlegt"],
+        ];
+
+        table.innerHTML = rows
+          .map(
+            ([label, value]) =>
+              `<tr><th scope='row'>${label}</th><td>${value}</td></tr>`
+          )
+          .join("");
+
+        abstractText.textContent = pub.abstract || "Keine Zusammenfassung hinterlegt.";
+      }
+    </script>
+  </body>
+</html>
