@@ -265,6 +265,22 @@ h1 {
   line-height: 1.45;
 }
 
+.current-teaching-list li {
+  margin-bottom: 0.62rem;
+}
+
+.current-teaching-list a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid #b8c3d7;
+  padding-bottom: 1px;
+}
+
+.current-teaching-list a:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
 .ekvv-overview-link {
   margin: 0.35rem 0 0.7rem;
   font-size: 0.95rem;
