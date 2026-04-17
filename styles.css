@@ -259,20 +259,10 @@ h1 {
   margin-bottom: 0.55rem;
 }
 
-.current-teaching-list li {
-  margin-bottom: 0.65rem;
-}
-
-.current-teaching-list a {
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid #b8c3d7;
-  padding-bottom: 1px;
-}
-
-.current-teaching-list a:hover {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
+.teaching-overview-list li {
+  margin-bottom: 0.48rem;
+  font-size: 0.94rem;
+  line-height: 1.45;
 }
 
 .ekvv-overview-link {
@@ -288,15 +278,6 @@ h1 {
 
 .ekvv-overview-link a:hover {
   border-bottom-color: var(--primary);
-}
-
-.compact-table .cv-table {
-  font-size: 0.9rem;
-}
-
-.compact-table .cv-table th,
-.compact-table .cv-table td {
-  padding: 0.62rem 0.72rem;
 }
 
 .project-title {
